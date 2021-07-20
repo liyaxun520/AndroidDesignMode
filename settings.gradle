@@ -1,3 +1,5 @@
+include ':customview'
+include ':module_observer'
 include ':chainofresponsibility'
 include ':app'
 rootProject.name = "AndroidDesignMode"

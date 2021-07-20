@@ -76,11 +76,11 @@ class MainActivity : AppCompatActivity() {
         Thread{
             kotlin.run {
                 groupLeader.handleRequest(800.toDouble())
-                SystemClock.sleep(5000)
+                SystemClock.sleep(1000)
                 groupLeader.handleRequest(4000.toDouble())
-                SystemClock.sleep(5000)
+                SystemClock.sleep(1000)
                 groupLeader.handleRequest(8000.toDouble())
-                SystemClock.sleep(5000)
+                SystemClock.sleep(1000)
                 groupLeader.handleRequest(20000.toDouble())
             }
         }.start()
