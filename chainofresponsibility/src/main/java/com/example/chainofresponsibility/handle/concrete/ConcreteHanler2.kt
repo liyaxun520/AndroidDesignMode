@@ -1,0 +1,19 @@
+package com.example.chainofresponsibility.handle.concrete
+
+import android.util.Log
+import com.example.chainofresponsibility.handle.Handler
+
+class ConcreteHanler2 :Handler(){
+
+    private val TAG:String = ConcreteHanler2::class.java.simpleName
+
+    override fun handleRequest(condition: String) {
+        if(condition === "ConcreteHanler2"){
+            Log.d(TAG,"ConcreteHanler2  处理请求")
+            return
+        } else {
+            successor?.handleRequest(condition)
+        }
+    }
+
+}

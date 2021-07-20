@@ -1,0 +1,3 @@
+include ':chainofresponsibility'
+include ':app'
+rootProject.name = "AndroidDesignMode"
